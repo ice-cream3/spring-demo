@@ -1,0 +1,24 @@
+<beans>
+	<bean id="userService"
+		class="com.spring.insist.service.UserServiceImpl" scope="singleton" >
+		<!-- 引用类型 -->
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+
+	<!-- 该类有一个初始化方法 -->
+	<bean id="userDao" class="com.spring.insist.dao.UserDaoImpl" scope="singleton"
+		  init-method="init">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<!-- 该类有一个初始化方法 -->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource" scope="singleton" >
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver"></property>
+		<property name="url"
+			value="jdbc:mysql://127.0.0.1:3306/my_test?characterEncoding=utf-8"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
+	</bean>
+</beans>

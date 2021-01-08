@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="afff0b34-fda7-45ed-a06f-baf2800f75d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_35.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/spring-framework-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/ioc/BeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/ioc/PropertyValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/ioc/TypedStringValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/BeanDefinition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/ClassPathResource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/PropertyValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/Resource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/RuntimeBeanReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/TypeStringValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/XmlBeanDefinitionDocumentParse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/XmlBeanDefinitionParse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/config/XmlPathResource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/converter/IntegerTypeConverter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/converter/StringTypeConverter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/converter/TypeConverter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/dao/UserDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/factory/AbstractBeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/factory/BeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/factory/DefaultListableBeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/ioc/BeanDefinition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/ioc/PropertyValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/ioc/TypedStringValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/po/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/utils/DocumentReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/classes/com/spring/insist/utils/ReflectUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-demo/target/spring-framework-demo-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/src/main/resources/beans2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/src/main/resources/sqlmapping.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/classes/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/classes/beans2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/classes/controller/SpringDemoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/classes/controller/SpringDemoTest2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/classes/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/classes/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/classes/sqlmapping.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-override/target/spring-override-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-framework-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/config/RuntimeBeanReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-framework-demo/src/main/java/com/spring/insist/config/RuntimeBeanReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-override/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-override/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-override/spring-override.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-override/spring-override.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mk4GGrORVoC6yWBj1NyrixPQmV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-override/src/main/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spring.insist.ioc" />
+      <recent name="com.spring.insist.po" />
+      <recent name="controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\spring-demo\spring-override\src\main\resources" />
+      <recent name="E:\workspace\spring-demo\spring-framework-demo\src\main\java\com\spring\insist" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringDemoTest2.testBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-override" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.SpringDemoTest2" />
+      <option name="METHOD_NAME" value="testBean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringDemoTest2.testBean" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="afff0b34-fda7-45ed-a06f-baf2800f75d3" name="Default Changelist" comment="" />
+      <created>1610024157883</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610024157883</updated>
+      <workItem from="1610024162345" duration="12037000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="477" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610025984049">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="477" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1610025984049" />
+    <state x="263" y="60" key="CommitChangelistDialog2" timestamp="1610101447305">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="263" y="60" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1610101447305" />
+    <state width="454" height="466" key="DebuggerActiveHint" timestamp="1610034204572">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="454" height="466" key="DebuggerActiveHint/0.0.1440.920@0.0.1440.920" timestamp="1610034204572" />
+    <state x="501" y="219" key="FileChooserDialogImpl" timestamp="1610025958683">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="501" y="219" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1610025958683" />
+    <state width="1397" height="300" key="GridCell.Tab.0.bottom" timestamp="1610034301344">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1610034301344" />
+    <state width="1397" height="300" key="GridCell.Tab.0.center" timestamp="1610034301344">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1610034301344" />
+    <state width="1397" height="300" key="GridCell.Tab.0.left" timestamp="1610034301344">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1610034301344" />
+    <state width="1397" height="300" key="GridCell.Tab.0.right" timestamp="1610034301344">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1610034301344" />
+    <state width="1397" height="300" key="GridCell.Tab.1.bottom" timestamp="1610034258372">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.1.bottom/0.0.1440.920@0.0.1440.920" timestamp="1610034258372" />
+    <state width="1397" height="300" key="GridCell.Tab.1.center" timestamp="1610034258372">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.1.center/0.0.1440.920@0.0.1440.920" timestamp="1610034258372" />
+    <state width="1397" height="300" key="GridCell.Tab.1.left" timestamp="1610034258372">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.1.left/0.0.1440.920@0.0.1440.920" timestamp="1610034258372" />
+    <state width="1397" height="300" key="GridCell.Tab.1.right" timestamp="1610034258372">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.1.right/0.0.1440.920@0.0.1440.920" timestamp="1610034258372" />
+    <state x="201" y="39" key="SettingsEditor" timestamp="1610030848834">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="201" y="39" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1610030848834" />
+    <state x="313" y="197" key="Vcs.Push.Dialog.v2" timestamp="1610101513647">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="313" y="197" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1610101513647" />
+    <state x="415" y="263" key="git4idea.merge.GitPullDialog" timestamp="1610101524836">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="415" y="263" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1610101524836" />
+    <state x="377" y="211" key="run.anything.popup" timestamp="1610032940141">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="377" y="211" key="run.anything.popup/0.0.1440.920@0.0.1440.920" timestamp="1610032940141" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest2.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest2.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
