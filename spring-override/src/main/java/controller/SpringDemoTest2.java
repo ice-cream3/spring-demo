@@ -1,7 +1,6 @@
 package controller;
 
 import com.spring.insist.config.RuntimeBeanReference;
-import com.spring.insist.config.TypeStringValue;
 import com.spring.insist.ioc.BeanDefinition;
 import com.spring.insist.ioc.PropertyValue;
 import com.spring.insist.ioc.TypedStringValue;
@@ -9,18 +8,18 @@ import com.spring.insist.po.User;
 import com.spring.insist.service.UserService;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
-import org.dom4j.DocumentFactory;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.xml.parsers.SAXParser;
 import java.io.InputStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName: SpringDemoTest
@@ -159,11 +158,10 @@ public class SpringDemoTest2 {
     @Test
     public void testBean() {
         // 调用开发人员的代码，获得Service对象
-//        UserService userService = getUserService();
+        // UserService userService = getUserService();
         UserService userService = (UserService) getBean("userService");
 
         // 以下代码才是测试人员需要的代码
-
         Map<String,Object> map = new HashMap<>();
         map.put("username","完美");
         List<User> users = userService.queryUsers(map);

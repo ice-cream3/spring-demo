@@ -2,13 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afff0b34-fda7-45ed-a06f-baf2800f75d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework-demo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-framework-demo/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework-demo/target/spring-framework-demo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-framework-demo/target/spring-framework-demo-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-override/spring-override.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-override/spring-override.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-override/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-override/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-override/target/spring-override-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-override/target/spring-override-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610024157883</updated>
       <workItem from="1610024162345" duration="12430000" />
-      <workItem from="1610102254346" duration="2262000" />
+      <workItem from="1610102254346" duration="3586000" />
     </task>
     <servers />
   </component>
@@ -110,22 +129,22 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="219" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1610025958683" />
-    <state width="1397" height="300" key="GridCell.Tab.0.bottom" timestamp="1610034301344">
+    <state width="1397" height="242" key="GridCell.Tab.0.bottom" timestamp="1610185806496">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="300" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1610034301344" />
-    <state width="1397" height="300" key="GridCell.Tab.0.center" timestamp="1610034301344">
+    <state width="1397" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1610185806496" />
+    <state width="1397" height="242" key="GridCell.Tab.0.center" timestamp="1610185806496">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="300" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1610034301344" />
-    <state width="1397" height="300" key="GridCell.Tab.0.left" timestamp="1610034301344">
+    <state width="1397" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1610185806496" />
+    <state width="1397" height="242" key="GridCell.Tab.0.left" timestamp="1610185806495">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="300" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1610034301344" />
-    <state width="1397" height="300" key="GridCell.Tab.0.right" timestamp="1610034301344">
+    <state width="1397" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1610185806495" />
+    <state width="1397" height="242" key="GridCell.Tab.0.right" timestamp="1610185806496">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="300" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1610034301344" />
+    <state width="1397" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1610185806496" />
     <state width="1397" height="300" key="GridCell.Tab.1.bottom" timestamp="1610034258372">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -164,12 +183,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest2.java</url>
-          <line>166</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-override/src/main/java/controller/SpringDemoTest2.java</url>
-          <line>214</line>
+          <line>212</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
