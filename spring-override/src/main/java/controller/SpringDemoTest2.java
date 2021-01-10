@@ -36,15 +36,11 @@ public class SpringDemoTest2 {
     private Map<String, Object> singletonObjects = new HashMap<>();
 
     @Before
-    public void before(){
+    public void before() {
         // 进行BeanDefinition的注册
-
         String location = "beans2.xml";
-
         InputStream inputStream = getInputStream(location);
-
         Document document = getDocument(inputStream);
-
         // 按照spring的配置语义进行解析
         loadBeanDefinitions(document.getRootElement());
     }
@@ -70,16 +66,15 @@ public class SpringDemoTest2 {
         List<Element> elements = rootElement.elements();
         for (Element element : elements) {
             String name = element.getName();
-            if (name.equals("bean")){
+            if (name.equals("bean")) {
                 // 系统标签
                 parseDefaultElement(element);
-            }else{
+            } else {
                 // 自定义标签
                 parseCustomElement(element);
             }
         }
     }
-
 
     private void parseDefaultElement(Element element) {
         String id = element.attributeValue("id");
@@ -87,22 +82,19 @@ public class SpringDemoTest2 {
         Class classType = resolveClassType(className);
         String scope = element.attributeValue("scope");
         String init = element.attributeValue("init-method");
-
-        String beanName = id == null? classType.getSimpleName(): id;
+        String beanName = id == null ? classType.getSimpleName() : id;
         BeanDefinition beanDefinition = new BeanDefinition(className, beanName);
         beanDefinition.setScope(scope);
         beanDefinition.setInitMethod(init);
-
         List<Element> elements = element.elements();
-        parsePropertyElements(beanDefinition,elements);
-
+        parsePropertyElements(beanDefinition, elements);
         this.beanDefinitions.put(id, beanDefinition);
 
     }
 
     private void parsePropertyElements(BeanDefinition beanDefinition, List<Element> elements) {
         for (Element element : elements) {
-            parsePropertyElement(beanDefinition,element);
+            parsePropertyElement(beanDefinition, element);
         }
     }
 
@@ -115,15 +107,15 @@ public class SpringDemoTest2 {
             return;
         }
 
-        if (value != "" && value != null){
+        if (value != "" && value != null) {
             TypedStringValue typedStringValue = new TypedStringValue(value);
             Class targetType = resolveTargetType(beanDefinition.getClazzType(), name);
             typedStringValue.setTargetType(targetType);
-            PropertyValue pv = new PropertyValue(name,typedStringValue);
+            PropertyValue pv = new PropertyValue(name, typedStringValue);
             beanDefinition.addPropertyValue(pv);
-        }else if(ref != "" && ref != null){
+        } else if (ref != "" && ref != null) {
             RuntimeBeanReference reference = new RuntimeBeanReference(ref);
-            PropertyValue pv = new PropertyValue(name,reference);
+            PropertyValue pv = new PropertyValue(name, reference);
             beanDefinition.addPropertyValue(pv);
         }
     }
@@ -142,17 +134,13 @@ public class SpringDemoTest2 {
     private Class resolveClassType(String clazzName) {
         try {
             return Class.forName(clazzName);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
-        return  null;
-
+        return null;
     }
 
-
     private void parseCustomElement(Element element) {
-
     }
 
     @Test
@@ -160,10 +148,9 @@ public class SpringDemoTest2 {
         // 调用开发人员的代码，获得Service对象
         // UserService userService = getUserService();
         UserService userService = (UserService) getBean("userService");
-
         // 以下代码才是测试人员需要的代码
-        Map<String,Object> map = new HashMap<>();
-        map.put("username","完美");
+        Map<String, Object> map = new HashMap<>();
+        map.put("username", "完美");
         List<User> users = userService.queryUsers(map);
         System.out.println(users);
     }
@@ -208,7 +195,6 @@ public class SpringDemoTest2 {
          *             3.1.单例:如果不存在则创建bean实例,并放入singleton中
          *             3.2:多例:如果不存在则创建bean实例
          */
-
         // 判断单例对象是否存在
         Object bean = this.singletonObjects.get(name);
         if (bean != null) {
@@ -216,18 +202,16 @@ public class SpringDemoTest2 {
         }
 
         BeanDefinition bd = this.beanDefinitions.get(name);
-        if (bd == null){
+        if (bd == null) {
             return null;
         }
-        if ("singleton".equals(bd.getScope())){
+        if ("singleton".equals(bd.getScope())) {
             bean = createBean(bd);
-            this.singletonObjects.put(name,bean);
-        }else if ("prototype".equals(bd.getScope())){
+            this.singletonObjects.put(name, bean);
+        } else if ("prototype".equals(bd.getScope())) {
             bean = createBean(bd);
         }
-
         return bean;
-
     }
 
     private Object createBean(BeanDefinition bd) {
@@ -237,9 +221,7 @@ public class SpringDemoTest2 {
         populateBean(bd, bean);
         // 3、bean的初始化（init方法）
         initializingBean(bd, bean);
-
         return bean;
-
     }
 
     // bean实例化
@@ -266,16 +248,14 @@ public class SpringDemoTest2 {
         for (PropertyValue p : pv) {
             String name = p.getName();
             Object originalValue = p.getValue();
-
             Object valueToUse = resolveValue(originalValue);
-
-            setPropertyValue(bean,name,valueToUse);
+            setPropertyValue(bean, name, valueToUse);
         }
     }
 
     private void setPropertyValue(Object bean, String name, Object valueToUse) {
         try {
-            if(null == bean) {
+            if (null == bean) {
                 return;
             }
             Field declaredField = bean.getClass().getDeclaredField(name);
@@ -287,16 +267,15 @@ public class SpringDemoTest2 {
     }
 
     private Object resolveValue(Object originalValue) {
-        if (originalValue instanceof TypedStringValue){
+        if (originalValue instanceof TypedStringValue) {
             TypedStringValue typedStringValue = (TypedStringValue) originalValue;
             Object valueToUse = typedStringValue.getValue();
-
             Class targetType = typedStringValue.getTargetType();
-            if (targetType != null){
-                valueToUse = handleType(valueToUse,targetType);
+            if (targetType != null) {
+                valueToUse = handleType(valueToUse, targetType);
             }
             return valueToUse;
-        }else if (originalValue instanceof RuntimeBeanReference){
+        } else if (originalValue instanceof RuntimeBeanReference) {
             RuntimeBeanReference reference = (RuntimeBeanReference) originalValue;
             String ref = reference.getRef();
             // TODO 出现循环依赖的地方
@@ -308,7 +287,7 @@ public class SpringDemoTest2 {
     private Object handleType(Object valueToUse, Class targetType) {
         if (targetType == String.class) {
             return valueToUse.toString();
-        } else if(targetType == Integer.class) {
+        } else if (targetType == Integer.class) {
             return Integer.parseInt(valueToUse.toString());
         }
         return null;
@@ -319,23 +298,20 @@ public class SpringDemoTest2 {
         // TODO 可以针对目标对象进行Aware
         // TODO 比如BeanFactoryAware
 
-        invokeInitMethod(bd,bean);
-
+        invokeInitMethod(bd, bean);
     }
 
     private void invokeInitMethod(BeanDefinition bd, Object bean) {
         // TODO 针对实现了InitializingBean接口的类调用afterPropertiesSet方法
-
         try {
             String initMethod = bd.getInitMethod();
-            if (!"".equals(initMethod) && initMethod != null){
+            if (!"".equals(initMethod) && initMethod != null) {
                 Class<?> clazzType = bd.getClazzType();
                 Method method = clazzType.getDeclaredMethod(initMethod);
                 method.invoke(bean);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
