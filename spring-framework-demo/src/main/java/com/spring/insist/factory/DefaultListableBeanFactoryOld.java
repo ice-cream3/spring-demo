@@ -4,7 +4,7 @@ import com.spring.insist.config.*;
 import com.spring.insist.converter.IntegerTypeConverter;
 import com.spring.insist.converter.StringTypeConverter;
 import com.spring.insist.converter.TypeConverter;
-import com.spring.insist.utils.ReflectUtils;
+import com.spring.insist.utils.ReflectReader;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,7 +17,7 @@ import java.util.Map;
  * @Author: lixl
  * @Date: 2020/4/7 22:51
  */
-public class DefaultListableBeanFactory extends AbstractBeanFactory {
+public class DefaultListableBeanFactoryOld extends AbstractBeanFactoryOld {
 
     private Map<String, BeanDefinition> beanDefinitions = new HashMap<>();
     private Map<String, Object> singletonObjects = new HashMap<>();
@@ -25,7 +25,7 @@ public class DefaultListableBeanFactory extends AbstractBeanFactory {
     private List<Resource> resources = new ArrayList<>();
     private List<TypeConverter> typeConverters = new ArrayList<>();
 
-    public DefaultListableBeanFactory(String location) {
+    public DefaultListableBeanFactoryOld(String location) {
         // 注册resource对象
         registerResources();
         registerTypeConverter();
@@ -107,7 +107,7 @@ public class DefaultListableBeanFactory extends AbstractBeanFactory {
             return;
         }
         // 反射调用
-        ReflectUtils.invokeMethod(instance, initMethod);
+        ReflectReader.invokeMethod(instance, initMethod);
     }
 
     private void setProperty(Object instance, BeanDefinition beanDefinition) {
@@ -140,12 +140,12 @@ public class DefaultListableBeanFactory extends AbstractBeanFactory {
             }
 
             // 反射赋值
-            ReflectUtils.setProperty(instance, name, valueToUse);
+            ReflectReader.setProperty(instance, name, valueToUse);
         }
     }
 
     private Object createBeanInstance(String clazzName, Object... args) {
-        return ReflectUtils.createObject(clazzName, args);
+        return ReflectReader.createObject(clazzName, args);
     }
 
     public Map<String, BeanDefinition> getBeanDefinitions() {

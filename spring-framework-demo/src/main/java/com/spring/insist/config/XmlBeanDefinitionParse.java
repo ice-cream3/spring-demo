@@ -1,6 +1,6 @@
 package com.spring.insist.config;
 
-import com.spring.insist.factory.DefaultListableBeanFactory;
+import com.spring.insist.factory.DefaultListableBeanFactoryOld;
 import com.spring.insist.utils.DocumentReader;
 import org.dom4j.Document;
 
@@ -19,7 +19,7 @@ public class XmlBeanDefinitionParse {
      * @param beanFactory
      * @param resource
      */
-    public void load(DefaultListableBeanFactory beanFactory, Resource resource) {
+    public void load(DefaultListableBeanFactoryOld beanFactory, Resource resource) {
         // 1.读取配置文件的bean信息
         InputStream inputStream = resource.getInputStream();
         // 获得document

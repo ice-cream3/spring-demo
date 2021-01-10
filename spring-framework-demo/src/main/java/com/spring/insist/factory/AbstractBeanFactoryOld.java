@@ -6,7 +6,7 @@ package com.spring.insist.factory;
  * @Author: lixl
  * @Date: 2020/4/7 22:49
  */
-public abstract class AbstractBeanFactory implements BeanFactory {
+public abstract class AbstractBeanFactoryOld implements BeanFactoryOld {
 
     @Override
     public Object getBean(String beanName) {

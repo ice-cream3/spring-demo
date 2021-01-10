@@ -1,7 +1,7 @@
 package controller;
 
-import com.spring.insist.factory.BeanFactory;
-import com.spring.insist.factory.DefaultListableBeanFactory;
+import com.spring.insist.factory.BeanFactoryOld;
+import com.spring.insist.factory.DefaultListableBeanFactoryOld;
 import entity.User;
 import org.junit.Test;
 
@@ -24,7 +24,7 @@ public class SpringDemoTest {
         // xml
         String location = "classpath:beans.xml";
         // 工厂方法创建bean
-        BeanFactory beanFactory = new DefaultListableBeanFactory(location);
+        BeanFactoryOld beanFactory = new DefaultListableBeanFactoryOld(location);
         User user = (User) beanFactory.getBean("user");
         System.out.println(user.toString());
     }

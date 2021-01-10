@@ -20,6 +20,12 @@
             <artifactId>spring-framework-demo</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>spring-framework-override</artifactId>
+            <version>2.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- dbcp连接池依赖 -->
         <dependency>

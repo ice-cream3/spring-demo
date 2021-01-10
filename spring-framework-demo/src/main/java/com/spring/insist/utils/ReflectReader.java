@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-public class ReflectUtils {
+public class ReflectReader {
 
     public static Object createObject(String beanClassName, Object... args) {
         try {

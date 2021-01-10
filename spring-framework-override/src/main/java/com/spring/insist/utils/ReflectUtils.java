@@ -6,25 +6,32 @@ import java.lang.reflect.Method;
 
 public class ReflectUtils {
 
-    public static Object createObject(String beanClassName, Object... args) {
+    public static Object newInstance(Class clazzType){
         try {
-            Class<?> clazz = Class.forName(beanClassName);
-            Constructor<?> constructor = clazz.getConstructor();
-            // 默认调用无参构造进行对象的创建
-            return constructor.newInstance(args);
-        } catch (Exception e) {
+            // 默认获取的是无参构造（如果想通过有参构造的话，需要怎么做）
+            // TODO <constructor-arg>
+            Constructor<?> constructor = clazzType.getConstructor();
+
+            // 通过构造器去创建实例
+            Object bean = constructor.newInstance();
+            return bean;
+        }catch (Exception e){
             e.printStackTrace();
         }
-        return null;
+        return  null;
+
     }
 
-    public static void setProperty(Object beanInstance, String name, Object valueToUse) {
+    public static void setProperty(Object bean, String name, Object valueToUse){
         try {
-            Class<?> clazz = beanInstance.getClass();
-            Field field = clazz.getDeclaredField(name);
+            if(null == bean) {
+                return;
+            }
+            Class<?> aClass = bean.getClass();
+            Field field = aClass.getDeclaredField(name);
             field.setAccessible(true);
-            field.set(beanInstance, valueToUse);
-        } catch (Exception e) {
+            field.set(bean,valueToUse);
+        }catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -42,6 +49,10 @@ public class ReflectUtils {
 
     public static void invokeMethod(Object beanInstance, String initMethod) {
         try {
+            if ("".equals(initMethod) || initMethod != null){
+                return;
+            }
+
             Class<?> clazz = beanInstance.getClass();
             Method method = clazz.getDeclaredMethod(initMethod);
             method.setAccessible(true);

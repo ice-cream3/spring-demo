@@ -1,8 +1,7 @@
 package com.spring.insist.config;
 
-import com.spring.insist.factory.DefaultListableBeanFactory;
-import com.spring.insist.utils.ReflectUtils;
-import org.dom4j.Attribute;
+import com.spring.insist.factory.DefaultListableBeanFactoryOld;
+import com.spring.insist.utils.ReflectReader;
 import org.dom4j.Element;
 
 import java.util.List;
@@ -14,9 +13,9 @@ import java.util.List;
  * @Date: 2020/4/8 21:46
  */
 public class XmlBeanDefinitionDocumentParse {
-    private DefaultListableBeanFactory beanFactory;
+    private DefaultListableBeanFactoryOld beanFactory;
 
-    public XmlBeanDefinitionDocumentParse(DefaultListableBeanFactory beanFactory) {
+    public XmlBeanDefinitionDocumentParse(DefaultListableBeanFactoryOld beanFactory) {
         this.beanFactory = beanFactory;
     }
 
@@ -119,7 +118,7 @@ public class XmlBeanDefinitionDocumentParse {
         if (null != value && !"".equals(value)) {
             // value属性---属性值、属性类型（属性赋值的时候，需要进行类型转换）TypedStringValue
             TypeStringValue typeStringValue = new TypeStringValue(value);
-            Class<?> targetType = ReflectUtils.getTypeByFieldName(beanDefinition.getClazzName(), name);
+            Class<?> targetType = ReflectReader.getTypeByFieldName(beanDefinition.getClazzName(), name);
             typeStringValue.setTargetType(targetType);
             // 封装propertyValue
             propertyValue = new PropertyValue(name, typeStringValue);

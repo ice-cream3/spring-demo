@@ -6,7 +6,7 @@ import org.dom4j.io.SAXReader;
 
 import java.io.InputStream;
 
-public class DocumentReader {
+public class DocumentUtils {
 
 	/**
 	 * 创建Document对象

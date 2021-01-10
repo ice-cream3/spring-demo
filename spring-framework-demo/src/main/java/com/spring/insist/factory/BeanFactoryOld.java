@@ -4,7 +4,7 @@ package com.spring.insist.factory;
  * @author: lixl
  * @Date: 2020/4/13 7:01
  */ 
-public interface BeanFactory {
+public interface BeanFactoryOld {
 
     /**
      * 名称
