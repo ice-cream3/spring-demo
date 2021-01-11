@@ -1,8 +1,8 @@
 # spring-demo
 简单实现 spring加载过程
 手写spring ioc的设计思路:参考spring源码
-         * 设计思想:配置+反射+容器
-         *
+         设计思想:配置+反射+容器
+         
          * 1.bean配置文件
          *  <bean id="类的名称" class="类的全限路径">
          *      <property name="属性名" value="属性值"/>
