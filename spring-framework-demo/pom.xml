@@ -10,10 +10,14 @@
 
     <dependencies>
         <!-- DOM4J依赖 -->
+        <!-- dom4j version prior to version 2.1.1 contains a CWE-91: XML Injection vulnerability in Class: Element. 
+                  Methods: addElement, addAttribute that can result in an attacker tampering with XML documents through XML injection. 
+            版本2.1.1之前的dom4j版本在Class: Element中包含一个CWE-91: XML注入漏洞。方法:addElement, addAttribute，可能导致攻击者通过XML注入篡改XML文档。
+          攻击者可以通过指定XML文档中的属性或元素来利用这种攻击。这个漏洞似乎已经在2.1.1或更高版本中修复。-->
         <dependency>
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
+            <version>2.1.1</version>
         </dependency>
         <!-- xpath依赖 -->
         <dependency>
